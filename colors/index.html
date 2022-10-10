@@ -1,0 +1,47 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/colors/styles2" >
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>micah</h1>
+    <button id="lightMode">Light Mode</button>
+    <button id="darkMode">Dark Mode</button>
+    <button id="normalMode">Normal Mode</button>
+
+<script>
+    $('document').ready( function(){
+        if ($('body').css("background-color") == "rgb(95, 158, 160)" ){
+            $('#normalMode').hide();
+        }
+
+        
+        
+        $('#lightMode').click(function(){
+            $('body').css("background-color","gray");
+            $(this).hide();
+            $('#normalMode').show();
+            $('#darkMode').show();
+        })
+
+        $('#darkMode').click(function(){
+            $('body').css("background-color","#111234");
+            $(this).hide();
+            $('#normalMode').show();
+            $('#lightMode').show();
+        })
+
+        $('#normalMode').click(function(){
+            $('body').css("background-color","cadetblue");
+            $('#darkMode').show();
+            $(this).hide();
+        })
+
+
+    })
+</script>
+
+</body>
+</html>
+    
+java
