@@ -1,0 +1,13 @@
+body {
+    background-image: url('/tuxcart/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 25px;
+    background: #d2d3d6;
+}
